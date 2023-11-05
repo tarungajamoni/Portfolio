@@ -700,6 +700,8 @@ p {
 		margin: 1.5%;
 	}
 }
+/* Your existing CSS... */
+
 /* Style the dropdown trigger */
 .dropdown-content {
 	display: none;
@@ -728,4 +730,5 @@ p {
   .dropdown-trigger:hover .dropdown-content {
 	display: block;
   }
+
 /* End  Media Query For Desktop */
