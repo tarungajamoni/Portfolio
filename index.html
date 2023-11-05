@@ -15,7 +15,7 @@
       <div class="nav-bar">
         <div class="brand">
           <a href="#hero">
-            <h1><span>S</span>ai <span>T</span>arun</h1>
+            <h1><span>S</span>ai <span>T</span>arun <span>G</span>ajamoni</h1>
           </a>
         </div>
         <div class="nav-list">
@@ -23,18 +23,19 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <!--<li><a href="#services" data-after="Service">Services</a></li>-->
             <div class="dropdown">
-  <button class="dropbtn">Projects</button>
-  <div class="dropdown-content">
-    <a href="#projects">Data Science Projects</a>
-    <a href="#">Item 2</a>
-    <a href="#">Item 3</a>
-  </div>
-</div>
-            <li><a href="#projects" data-after="Projects">Data Science Projects</a></li>
+            <li><a href="#hero" data-after="Home">Home</a></li>
             <li><a href="#about" data-after="About">About</a></li>
+            <!--<li><a href="#services" data-after="Service">Services</a></li>-->
+            <li class="dropdown-trigger">
+              <a href="javascript:void(0);" data-after="Projects">Projects &#9662;</a>
+              <div class="dropdown-content">
+                <a href="#projects">Data Science</a>
+                <!--<a href="#project2">React</a>
+                <a href="#project3">Project</a>-->
+              </div>
+            </li>
+            
             <li><a href="#contact" data-after="Contact">Contact</a></li>
           </ul>
         </div>
@@ -96,12 +97,32 @@
   </section>
    End Service Section -->
 
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/img-2.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Data Science Aspirant</h2>
+        <p>I have transitioned into the dynamic field of data science driven by a long-standing passion for harnessing data's power. My path has been shaped by hands-on experience in data analysis, machine learning, and data visualization. I've implemented a wide range of machine learning algorithms and developed a strong foundation in statistical learning. My interests extend to deep learning, and as I actively seek data science roles, I'm enthusiastic about applying my skills to solve real-world challenges and contribute to data-driven decision-making. Thank you for joining me on this exhilarating journey!</p>
+        <a href="./img/SaiTarun_DataScientist_Resume.pdf" target="_blank" class="cta">View Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
   <!-- Projects Section -->
   <section id="projects">
     <div class="projects container">
       <div class="projects-header">
-        <h1 class="section-title"><span>Data Science Projects</span></h1>
-        <h1> (click on projects to view source code)</h1>
+        <h1 class="section-title"><span>Data Science Projects</span><h2> <center>(Click on projects to view source code)</center></h2></h1>
+        
       </div>
       <div class="all-projects">
         <a href="https://github.com/tarungajamoni/Data-Science-Projects/blob/main/Malaria%20Infected%20Cell%20Detection/Malaria%20Detection.ipynb" target="_blank">
@@ -119,14 +140,18 @@
           </div>
         
           <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
+            <div class="img-container">
+            <img src="./img/malaria.jpg" alt="img">
+            <div class="hover-text">Click to view source code</div>
           </div>
         </div>
+        </div>
+
       </a>
       <a href="https://github.com/tarungajamoni/Data-Science-Projects/blob/main/Transaction%20Fraud%20Detection/Transaction%20Fraud%20Detection.ipynb" target="_blank">
         <div class="project-item">
           <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
+            <img src="./img/transaction.jpg" alt="img">
           </div>
           <div class="project-info">
             <h1>Transaction Fraud Detection</h1>
@@ -154,14 +179,14 @@
             </p>
           </div>
           <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
+            <img src="./img/car.jpg" alt="img">
           </div>
         </div>
       </a>
       <a href="https://github.com/tarungajamoni/Data-Science-Projects/blob/main/Customer%20Conversion%20Prediction/Customer%20Conversion%20Prediction.ipynb" target="_blank">
         <div class="project-item">
           <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
+            <img src="./img/customer.avif" alt="img">
           </div>
           <div class="project-info">
             <h1>Customer Conversion Prediction</h1>
@@ -170,42 +195,47 @@
               The project aims to help the insurance company identify the customers that are most likely to convert, so that they can be targeted directly reducing marketing campaigns. 
               The historical sales data provided will be used to train and evaluate the performance of the machine learning models. 
               The analysis of the model will be done to identify the important factors that contribute towards the conversion and the AUROC metric will be used to evaluate the model's performance.</p>
-          </div>
+          <h2>(Click to view source code)</h2>
+        </div>
           
         </div>
       </a>
+      <a href="https://github.com/tarungajamoni/Data-Science-Projects/tree/main/Book%20Recommendation%20System" target="_blank">
         <div class="project-item">
           <div class="project-info">
-            <h1>Prompt Engineering</h1>
+            <h1>Book Recommendation System</h1>
             <!--h2>Coding is Love</h2-->
-            <p></p>
+            <p>A personalized recommendation engine based on collaborative filtering-based recommender, that suggests books to users based on the preferences and behaviors of similar readers. 
+              It operates on the premise that users who share similar reading habits and have enjoyed the same books in the past are likely to appreciate similar books in the future.</p>
           </div>
           <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
+            <img src="./img/book.jpg" alt="img">
           </div>
         </div>
-      </div>
+      </a>
+      <a href="https://github.com/tarungajamoni/Data-Science-Projects" target="_blank">
+        <div class="project-item">
+          <div class="project-img">
+            <img src="./img/img-3.png.webp" alt="img">
+          </div>
+          <div class="project-info">
+            <h1>More projects on Data Science</h1>
+            
+          
+        </div>
+          
+        </div>
+      </a>
+      
+      
     </div>
+  </div> 
+</div>
+</a> 
   </section>
   <!-- End Projects Section -->
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/img-2.jpg" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Data Science Aspirant</h2>
-        <p>I have transitioned into the dynamic field of data science driven by a long-standing passion for harnessing data's power. My path has been shaped by hands-on experience in data analysis, machine learning, and data visualization. I've implemented a wide range of machine learning algorithms and developed a strong foundation in statistical learning. My interests extend to deep learning, and as I actively seek data science roles, I'm enthusiastic about applying my skills to solve real-world challenges and contribute to data-driven decision-making. Thank you for joining me on this exhilarating journey!</p>
-        <a href="./img/SaiTarun_DataScientist_Resume.pdf" target="_blank" class="cta">View Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
+
 
   <!-- Contact Section -->
   <section id="contact">
@@ -226,7 +256,7 @@
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
           <div class="contact-info">
             <h1>Email</h1>
-            <h2>saitarun.goud1998@gmail.com</h2>
+            <h2>tarungajamoni@gmail.com</h2>
             
           </div>
         </div>
